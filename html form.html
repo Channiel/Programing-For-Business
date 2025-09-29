@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Registration Form</title>
+  
+  <link rel="stylesheet" href="assignment.css">
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Registration Form</h1>
+      
+
+      <form class="registration-form" action="#" method="post" novalidate>
+        <div class="form-grid">
+
+          
+          <div class="form-row">
+            <label for="fullname">Full Name</label>
+            <input class="input fullname" id="fullname" name="fullname" type="text"
+                   placeholder="Masukkan nama lengkap Anda" required>
+          </div>
+
+          
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input class="input email" id="email" name="email" type="email"
+                   placeholder="Masukan Email Anda" required>
+          </div>
+
+          
+          <div class="form-row">
+            <label for="phone">Phone Number</label>
+            <input class="input phone" id="phone" name="phone" type="tel"
+                   placeholder="+62XXXXXXXX" required>
+          </div>
+
+         
+          <div class="form-row">
+            <label for="dob">Date of Birth</label>
+            <input class="input dob" id="dob" name="dob" type="date" required>
+          </div>
+
+          
+          <div class="form-row">
+            <label>Gender</label>
+            <div class="radio-group inline-group">
+              <label><input type="radio" name="gender" value="male" required> Male</label>
+              <label><input type="radio" name="gender" value="female"> Female</label>
+              <label><input type="radio" name="gender" value="other"> Other</label>
+            </div>
+          </div>
+
+          
+          <div class="form-row full-width">
+            <label>Hobbies</label>
+            <div class="checkbox-group inline-group">
+              <label><input type="checkbox" name="hobbies" value="reading"> Reading</label>
+              <label><input type="checkbox" name="hobbies" value="sports"> Sports</label>
+              <label><input type="checkbox" name="hobbies" value="music"> Music</label>
+              <label><input type="checkbox" name="hobbies" value="travelling"> Travelling</label>
+            </div>
+          </div>
+
+          
+          <div class="form-row">
+            <label for="program">Program of Study</label>
+            <select id="program" name="program" class="select program" required>
+              <option value="" disabled selected>-- Pilih program studi --</option>
+              <option value="is">Information Systems</option>
+              <option value="cs">Computer Science</option>
+              <option value="it">Information Technology</option>
+              <option value="bd">Business & Digital</option>
+            </select>
+          </div>
+
+          
+          <div class="form-row full-width">
+            <label for="address">Full Address</label>
+            <textarea id="address" name="address" class="textarea address" rows="4"
+                      placeholder= "Masukan Alamat Anda" required></textarea>
+          </div>
+        
+          <div class="form-row full-width actions">
+            <button type="reset" class="btn reset">Reset</button>
+            <button type="submit" class="btn submit">Submit Registration</button>
+          </div>
+
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
